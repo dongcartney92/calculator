@@ -2,7 +2,7 @@
  
 int add(int, int);
 int sub(int, int);
-int div(int, int);
+float div(int, int);
 int multi(int, int);
  
 int main(int argc, char* argv[])
@@ -52,8 +52,12 @@ int multi(int number1, int number2)
 	return 0;
 }
  
-int div(int number1, int number2)
+float div(int number1, int number2)
 {
 	//TODO implementation
-	return 0;
+	if (number2 == 0){
+		return -1;
+	}
+
+	return nubmer1 / nubmer2;
 }
